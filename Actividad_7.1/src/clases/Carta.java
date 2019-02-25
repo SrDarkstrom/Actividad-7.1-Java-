@@ -15,7 +15,8 @@ public class Carta {
 	}
 
 	public Carta() {
-		
+		this.valor = null;
+		this.palo = null;
 	}
 
 	public Carta toclone() {
@@ -23,9 +24,22 @@ public class Carta {
 		return c;
 	}
 	
+	public Valor getValor() {
+		return this.valor;
+	}
+	
+	public Palo getPalo() {
+		return this.palo;
+	}
+	
+	
+	public double getPuntos() {
+		return this.valor.getPuntos();
+	}
+	
 	@Override
 	public String toString() {
-		return "Carta [valor=" + valor + ", palo=" + palo + "]\n";
+		return valor + " de " + palo + " \n";
 	}
 	
 	

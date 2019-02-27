@@ -3,10 +3,19 @@ package main;
 import java.util.Scanner;
 
 import clases.Jugador;
-
+/**
+ * En la clase principal se ha escrito el funcionamiento del juego, para ello hemos utilizado las funciones de jugador (la cuál 
+ * contiene funciones propias y llamadas a la clase baraja).
+ * 
+ * @author Pablo Cabello,Sergio Millan, Jose Angel Viyuela
+ * @version 1.0
+ * @since 2019-02-15
+ *
+ */
 public class MainApartado_a {
 	public static void main(String[] args) {
-				Scanner sc = new Scanner(System.in);
+			
+		Scanner sc = new Scanner(System.in);
 		Jugador jugadores[];
 		String nombre;
 		char menu = 'a', menu2 = 'a';

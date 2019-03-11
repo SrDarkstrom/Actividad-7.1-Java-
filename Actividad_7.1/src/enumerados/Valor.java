@@ -1,6 +1,7 @@
 package enumerados;
 /**
  * Este enumerado sirve para determinar el valor de cada carta y a su vez devolver cuanto vale cada carta
+ * 
  * @author Pablo Cabello, Sergio Millan, Jose Angel Viyuela
  * @version 1.0
  * @since 2019-02-15
@@ -12,10 +13,18 @@ public enum Valor{
 	
 	double puntos;
 	
+	/**
+	 * Este es el constructor del enumerado.
+	 * 
+	 * @param se le introduce el valor de cada carta y se iguala a una variable llamada puntos.
+	 */
 	Valor (double valor){
 		puntos = valor;
 	}
 	
+	/**
+	 * Devuelve el valor de la variable puntos.
+	 */
 	public double getPuntos() {
 		return puntos;
 	}

@@ -3,35 +3,33 @@ package clases;
 import enumerados.Valor;
 import enumerados.Palo;
 
-// POR AHORA ACABADA
+/**
+ * Esta Clase crea cartas mediante dos enumerados, VALOR y PALO.
+ * 
+ * @author Pablo Cabello, Sergio Millan, Jose Angel Viyuela
+ * @version 1.0
+ * @since 2019-02-15
+ */
 
 public class Carta {
 	
-	/**
-	 * Esta Clase crea todas las cartas
-	 * 
-	 * @author Pablo Cabello, Sergio Millan, Jose Angel Viyuela
-	 * @version 1.0
-	 * @since 2019-02-15
-	 */
 	private Valor valor;
 	private Palo palo;
-
+	/**
+	 * Constructor con los valores de los enumerados para crear las 40 cartas
+	 * 
+	 * @param valor es el valor que tendra la carta (as,caballo,etc...)
+	 * @param palo es el palo que tendra la carta (oro,bastos,etc...)
+	 */
 	public Carta(Valor valor, Palo palo) {
-		/**
-		 * Constructor con los parametros de los enumerados para crear las 40 cartas
-		 * 
-		 * @param valor es el valor que tendra la carta (as,caballo,etc...)
-		 * @param palo es el palo que tendra la carta (oro,bastos,etc...)
-		 */
 		this.valor = valor;
 		this.palo = palo;
 	}
 
+	/**
+	 * Crea las carta con valor y palo null
+	 */
 	public Carta() {
-		/**
-		 * Crea las carta con valor y palo null
-		 */
 		this.valor = null;
 		this.palo = null;
 	}
@@ -40,29 +38,26 @@ public class Carta {
 		Carta c = new Carta(this.valor,this.palo);
 		return c;
 	}
-	
+	/**
+	 * Devuelve el valor de la carta
+	 * @return Devuelve el valor de la carta
+	 */
 	public Valor getValor() {
-		/**
-		 * Devuelve el valor de la carta
-		 * @return Devuelve el valor de la carta
-		 */
 		return this.valor;
 	}
-	
+	/**
+	 * Devuelve el palo de la carta 
+	 * @return Devuelve el palo de la carta
+	 */
 	public Palo getPalo() {
-		/**
-		 * Devuelve el palo de la carta 
-		 * @return Devuelve el palo de la carta
-		 */
 		return this.palo;
 	}
 	
-	
+	/**
+	 * Devuelve los puntos del jugador
+	 * @return Devuelve los puntos del jugador
+	 */
 	public double getPuntos() {
-		/**
-		 * Devuelve los puntos del jugador
-		 * @return Devuelve los puntos del jugador
-		 */
 		return this.valor.getPuntos();
 	}
 	
